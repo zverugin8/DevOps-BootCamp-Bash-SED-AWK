@@ -25,4 +25,4 @@ def test_sedawk():
     except CalledProcessError as e:
         print(e.output)
 
-    assert filecmp.cmp('passwd_new', './tests/passwd_result') == True
+    assert filecmp.cmp('./passwd_new', './tests/passwd_result') == True
